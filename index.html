@@ -37,7 +37,7 @@
             border-radius: 8px; /* Rounded corners */
             cursor: pointer; /* Pointer cursor on hover */
             transition: background-color 0.3s ease; /* Smooth transition */
-/*            display: flex;   */
+            display: flex;   
             align-items: center; 
             gap: 10px; /* Space between icon and text */
         }
@@ -71,6 +71,21 @@
             gap: 10px; /* Space between each button */
             justify-content: center; /* Center aligns buttons */
             align-items: center;
+        }
+        
+        
+        /* Styles for screens 768px wide or smaller (tablets and mobile) */
+        @media (max-width: 768px) {
+            .no-margin_button {
+                display: none; /* Hide this element on small screens */
+            }
+        }
+
+        /* Styles for screens 480px wide or smaller (small phones) */
+        @media (max-width: 480px) {
+            .no-margin_button {
+                font-size: 14px;
+                padding: 10px;
         }
 
         /* Hover effect */
@@ -171,7 +186,7 @@
 		
     </header><!--/header-->
     
-    <section class="no-margin">
+    <section class="no-margin_button">
     <a href="tel:9769202912">
         <button class="telephone">
             <i class="fas fa-phone"></i> <!-- Call icon -->
