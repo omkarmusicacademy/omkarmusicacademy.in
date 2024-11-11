@@ -77,15 +77,21 @@
         /* Styles for screens 768px wide or smaller (tablets and mobile) */
         @media (max-width: 768px) {
             .no-margin_button {
-                display: none; /* Hide this element on small screens */
+                display: flex;
+                gap: 10px; /* Space between each button */
+                justify-content: center; /* Center aligns buttons */
+                align-items: center;
             }
         }
 
         /* Styles for screens 480px wide or smaller (small phones) */
         @media (max-width: 480px) {
             .no-margin_button {
-                font-size: 14px;
-                padding: 10px;
+                display: flex;
+                gap: 10px; /* Space between each button */
+                justify-content: center; /* Center aligns buttons */
+                align-items: center;
+            }
         }
 
         /* Hover effect */
