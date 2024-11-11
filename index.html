@@ -14,6 +14,7 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -23,6 +24,87 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <style>
+        /* Style for the Call Now button */
+        button {
+/*            background-color: #28a745;  */
+            color: #fff; /* White text */
+            padding: 15px 150px;   
+            margin: 3px 2px;
+            font-size: 16px; /* Text size */
+            font-weight: bold; /* Bold text */
+            border: none; /* Remove default border */
+            border-radius: 8px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth transition */
+/*            display: flex;   */
+            align-items: center; 
+            gap: 10px; /* Space between icon and text */
+        }
+        
+        .telephone {
+            background-color: #28a745;    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .youtube {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .facebook {
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        
+        .no-margin_button {
+            display: flex;
+            gap: 10px; /* Space between each button */
+            justify-content: center; /* Center aligns buttons */
+            align-items: center;
+        }
+
+        /* Hover effect */
+/*
+        button:hover {
+            background-color: #218838;  
+        }
+*/
+        .telephone:hover {
+            background-color: #28a745;    
+        }
+        
+        .youtube:hover {
+            background-color: darkred;
+        }
+        .facebook:hover {
+            background-color: darkblue;
+        }
+
+        /* Optional: Center button on the page */
+/*
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+*/
+        
+        
+
+    </style>
 </head><!--/head-->
 
 <body class="homepage">
@@ -88,8 +170,33 @@
         </nav><!--/nav-->
 		
     </header><!--/header-->
+    
+    <section class="no-margin_button">
+    <a href="tel:9769202912">
+        <button class="telephone">
+            <i class="fas fa-phone"></i> <!-- Call icon -->
+            Call Now
+        </button>
+    </a>
+    
+    <a href="https://www.youtube.com/@Omkarmusicacademy?sub_confirmation=1">
+        <button class="youtube">
+            <i class="fab fa-youtube"></i> <!-- Call icon -->
+            Youtube
+        </button>
+    </a>
+    
+    <a href="https://www.facebook.com/Onlinemusicacademyomkarmusic/">
+        <button class="facebook">
+            <i class="fab fa-facebook"></i> <!-- Call icon -->
+            Facebook
+        </button>
+    </a>
+    </section>
 
+    
     <section id="main-slider" class="no-margin">
+    
         <div class="carousel slide">
             <ol class="carousel-indicators">
                 <li data-target="#main-slider" data-slide-to="0" class="active"></li>
@@ -175,6 +282,7 @@
             <i class="fa fa-chevron-right"></i>
         </a>
     </section><!--/#main-slider-->
+    
  
     <footer id="footer" class="midnight-blue">
         <div class="container">
