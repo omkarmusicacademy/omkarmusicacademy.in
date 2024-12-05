@@ -183,6 +183,44 @@ h1::after {
 </style>  
 <!-- Headings Closed -->
     
+<!--Android Heading-->
+    <style>
+        @media(max-height:696px) {
+            /* General Body Styling */
+            body {
+              font-family: 'Poppins', sans-serif;
+              margin: 0;
+              padding: 0;
+              background: linear-gradient(120deg, #e3ffe7, #d9e7ff);
+              overflow-x: hidden;
+              color: #333;
+              scroll-behavior: smooth;
+            }
+
+            /* Section Headings */
+            h1 {
+              color: #2575fc;
+              font-size: 2.5rem;
+              text-align: center;
+              margin: 20px 0;
+              text-transform: uppercase;
+              letter-spacing: 1.5px;
+              position: relative;
+            }
+
+            h1::after {
+              content: "";
+              display: block;
+              width: 60px;
+              height: 4px;
+              background-color: #6a11cb;
+              margin: 10px auto;
+              border-radius: 2px;
+            }
+        }
+    </style>
+<!--Android Heading Closed-->
+    
     
 <!-- .column-container {
   display: grid;
