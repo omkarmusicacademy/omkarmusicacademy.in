@@ -1,25 +1,27 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Get Screen Width</title>
-</head>
-<body>
-  <h1>Screen Width Detector</h1>
-  <p id="screen-width"></p>
+    <style>
+        /* Hide both messages by default */
+.message {
+  display: none;
+}
 
-  <script>
-    // Function to get the width of the screen
-    function displayScreenWidth() {
-      const width = window.innerWidth; // Gets the width of the browser's viewport
-      document.getElementById('screen-width').textContent = 
-        `The width of your screen is: ${width}px`;
-    }
+/* Show the PC message for larger screens (e.g., desktops) */
+@media screen and (min-width: 1366px) {
+  .pc {
+    display: block;
+  }
+}
 
-    // Call the function on page load
-    displayScreenWidth();
+/* Show the Android message for smaller screens (e.g., mobile phones) */
+@media screen and (max-width: 980px) {
+  .android {
+    display: block;
+  }
+}
 
-    // Update the width dynamically if the window is resized
-    window.addEventListener('resize', displayScreenWidth);
-  </script>
-</body>
+    </style>
+    <body>
+        <div class="message pc">Hello, this is PC</div>
+        <div class="message android">Hello, this is Android</div>
+    </body>
 </html>
