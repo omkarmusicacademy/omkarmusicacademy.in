@@ -217,43 +217,7 @@ body {
     
     
     
-<!--Android Heading-->
-    <style>
-        @media(max-height:696px) {
-            /* General Body Styling */
-            body {
-              font-family: 'Poppins', sans-serif;
-              margin: 0;
-              padding: 0;
-              background: linear-gradient(120deg, #e3ffe7, #d9e7ff);
-              overflow-x: hidden;
-              color: #333;
-              scroll-behavior: smooth;
-            }
 
-            /* Section Headings */
-            h1 {
-              color: #2575fc;
-              font-size: 2.5rem;
-              text-align: center;
-              margin: 20px 0;
-              text-transform: uppercase;
-              letter-spacing: 1.5px;
-              position: relative;
-            }
-
-            h1::after {
-              content: "";
-              display: block;
-              width: 60px;
-              height: 4px;
-              background-color: #6a11cb;
-              margin: 10px auto;
-              border-radius: 2px;
-            }
-        }
-    </style>
-<!--Android Heading Closed-->
 
  
 
@@ -621,8 +585,30 @@ body, html {
         }
     </style>
     
-<body>
+    <style>
+        /* Top spacer */
+        .spacer-top {
+          width: 100%; /* Full width */
+          height: 50px; /* Adjust as needed */
+          background-color: #f4f4f4; /* Optional background color */
+        }
 
+        /* Bottom spacer */
+        .spacer-bottom {
+          width: 100%; /* Full width */
+          height: 100px; /* Adjust as needed */
+          background-color: #f4f4f4; /* Optional background color */
+        }
+
+        /* Optional: Style for debugging */
+        .spacer-top, .spacer-bottom {
+          outline: 1px solid red; /* Helps visually see spacers during development */
+        }
+
+    </style>
+    
+<body>
+<div class="spacer-top"></div>
 <div class="navbar">
   <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
   <a href="Tutorial_Video.html"><i class="fa fa-fw fa-film"></i> Tutorial Videos</a>
@@ -757,6 +743,7 @@ body, html {
 <div style="margin-top: 120px">
 <h1 style="text-align: center">Our Achievements</h1>
 </div>
+<div class="spacer-bottom"></div>
     
 <!--
 <div class="container">
