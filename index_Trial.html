@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+<style>
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e3ffe7, #d9e7ff);
+  overflow-x: hidden;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+/*  width: 100%;*/
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*
+.navbar a i {
+  margin-right: 8px;
+}
+*/
+
+/*
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+*/
+
+/*
+.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+}
+*/
+
+/*
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+*/
+
+/* Media Queries */
+/*
+@media screen and (max-width: 696px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar a {
+    margin-bottom: 5px;
+  }
+}
+*/
+    
+
+
+}
+
+/* Content Section */
+.content {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #2575fc;
+}
+
+.content p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Button for More Content */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #6a11cb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #2575fc;
+  transform: scale(1.1);
+}
+
+/* Animated Background */
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.floating-icons {
+  position: fixed;
+  top: 40%;
+  left: -50px;
+  animation: floating 3s infinite ease-in-out;
+}
+
+.floating-icons img {
+  width: 100px;
+  opacity: 0.7;
+}
+
+.floating-icons img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+</style>
+    
+    
+    
+<!--Android Heading-->
+    <style>
+        @media(max-height:696px) {
+            /* General Body Styling */
+            body {
+              font-family: 'Poppins', sans-serif;
+              margin: 0;
+              padding: 0;
+              background: linear-gradient(120deg, #e3ffe7, #d9e7ff);
+              overflow-x: hidden;
+              color: #333;
+              scroll-behavior: smooth;
+            }
+
+            /* Section Headings */
+            h1 {
+              color: #2575fc;
+              font-size: 2.5rem;
+              text-align: center;
+              margin: 20px 0;
+              text-transform: uppercase;
+              letter-spacing: 1.5px;
+              position: relative;
+            }
+
+            h1::after {
+              content: "";
+              display: block;
+              width: 60px;
+              height: 4px;
+              background-color: #6a11cb;
+              margin: 10px auto;
+              border-radius: 2px;
+            }
+        }
+    </style>
+<!--Android Heading Closed-->    
+    
+
+
+ 
+
+<!-- Call Option Closed -->
+    
+<!-- Headings -->    
+<style>
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e3ffe7, #d9e7ff);
+  overflow-x: hidden;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Section Headings */
+h1 {
+  color: #2575fc;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #6a11cb;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+ 
+</style>  
+<!-- Headings Closed -->
+    
+
+    
+    
+<!-- .column-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  gap: 20px; /* Space between columns */
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+-->
+    
+    
+<!-- 
+
+max-width: 1200px;
+margin: auto;
+gap: 20px; /* Space between columns */
+-->
+    
+<style>
+/* Interactive Button Styling */
+    
+
+
+    
+
+    
+.column-container {
+  display: grid;
+/*  grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: 700px 50px 500px;
+  align-items: center;
+  
+  
+}
+
+/* Column Styling */
+.column {
+  padding: 10px;
+/*
+    padding-left: 150px;
+    width: 10px;
+*/
+}
+
+/* Button Column */
+.button-column {
+  display: flex;
+  flex-direction: column;
+  gap: 150px; /* Space between buttons */
+}
+
+
+/* Container Styling */
+.btn-group {
+  display: flex;
+  flex-direction: column; 
+  
+}
+
+/* Interactive Button Styling */
+.btn-group button {
+  border: none; /* Remove default border */
+  padding: 15px 20px; /* Adjust padding for better spacing */
+  cursor: pointer; /* Pointer/hand icon */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  color: white; /* White text */
+  max-width: 90%; /* Adjust width */
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50px; /* Rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  margin-bottom: 10px; 
+  margin-left: 180px
+}
+
+/* Specific Button Colors */
+.telephone {
+  background-color: #28a745; /* Green background */
+}
+
+.youtube {
+  background-color: #FF0000; /* Red background */
+}
+
+.facebook {
+  background-color: #4267B2; /* Facebook blue */
+}
+
+/* Hover Effects */
+.btn-group button:hover {
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.telephone:hover {
+  background-color: #218838; /* Darker green */
+}
+
+.youtube:hover {
+  background-color: #CC0000; /* Darker red */
+}
+
+.facebook:hover {
+  background-color: #3756A0; /* Darker blue */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .btn-group {
+    align-items: center; /* Center align buttons */
+  }
+
+  .btn-group button {
+    max-width: 90%; /* Full width for smaller screens */
+  }
+}
+
+</style>
+    
+<!-- Photo Section -->
+    
+
+  <style>
+
+/*
+* {
+  box-sizing: border-box;
+}
+*/
+
+/*
+img {
+  vertical-align: middle;
+}
+*/
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height:76vh; /* Full height of the viewport */
+    background-color: grey; /* Black background for the container */
+    flex-direction: column; /* Align images vertically in the center */  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style> 
+    
+<!-- Photo Section Closed -->
+    
+<!-- Video Section -->  
+<style>
+/* Ensure the body takes up the full height of the page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+/* Center the video container in the page */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #111; /* Dark background */
+    box-sizing: border-box;
+}
+
+/* Make the iframe responsive */
+.video-container iframe {
+    width: 100%; /* Make iframe take full width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Limit the maximum width */
+    border: 2px solid #ddd; /* Add a border around the video */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+}
+
+/* Optional: Add a hover effect to the iframe */
+.video-container iframe:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+    
+</style>
+<!-- Video Section Closed -->     
+    
+<!-- Map Section -->
+    <style>
+    .map-container {
+            display: flex;
+            flex-direction: column; /* Stack the circle and label vertically */
+            justify-content: center; /* Center the content horizontally */
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .map-circle {
+            width: 220px; /* Increased Diameter of the circle */
+            height: 200px;
+            background-color: #4285F4; /* Google Maps blue color */
+            border-radius: 50%; /* Makes it a perfect circle */
+            display: flex;
+            justify-content: center; /* Center the icon horizontally */
+            align-items: center; /* Center the icon vertically */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow */
+            transition: all 0.3s ease-in-out; /* Smooth hover effect */
+            cursor: pointer;
+        }
+
+        .map-circle:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+            background-color: #2a63d4; /* Slightly darker blue on hover */
+        }
+
+        .map-circle i {
+            color: white; /* Icon color */
+            font-size: 48px; /* Increased icon size */
+        }
+
+        .location-label {
+            margin-top: 10px; /* Space between circle and label */
+            font-size: 18px; /* Label text size */
+            color: #333; /* Label text color */
+            font-weight: bold; /* Bold text for emphasis */
+        }
+    </style>
+<!-- Map Section Closed -->z
+    <style>
+        main {
+            background-image: url('images/Background/Instruments.jpg');
+            min-height: 100vh; /* Make the background image cover at least the viewport height */
+            background-size: cover; /* Ensure the image covers the entire area */
+            background-repeat: no-repeat; /* Prevent tiling */
+            background-position: center; /* Center the image */
+            padding: 20px; /* Add padding to ensure content doesn't touch the edges */
+        }
+    </style>
+    
+    <style>
+        /* Top spacer */
+        .spacer-top {
+          width: 100px; /* Full width */
+          height: 50px; /* Adjust as needed */
+          background-color: #f4f4f4; /* Optional background color */
+        }
+
+        /* Bottom spacer */
+        .spacer-bottom {
+          width: 100%; /* Full width */
+          height: 100px; /* Adjust as needed */
+          background-color: #f4f4f4; /* Optional background color */
+        }
+
+        /* Optional: Style for debugging */
+        .spacer-top, .spacer-bottom {
+          outline: 1px solid red; /* Helps visually see spacers during development */
+        }
+
+    </style>
+    
+<body>
+<div class="spacer-top"></div>
+<div class="navbar">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="Tutorial_Video.html"><i class="fa fa-fw fa-film"></i> Tutorial Videos</a>
+  <a href="Games.html"><i class="fa fa-fw fa-gamepad"></i> Music Games</a>
+  <div class="nav-right">
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    <a href="#" class="cta-button">Sign Up</a>
+  </div>
+</div>
+    
+<main>
+<div class="column-container">
+    <div class="btn-group column " style="width:100%;margin-top: 150px;">
+        <a href="tel:9769202912">
+            <button class="telephone" style="width:50%"><i class="fas fa-phone"></i>   Call Me</button>
+        </a>
+        <a href="https://www.youtube.com/@Omkarmusicacademy?sub_confirmation=1">
+            <button class="youtube" style="width:50%"><i class="fab fa-youtube"></i>   Youtube</button>
+        </a>
+        <a href="https://www.facebook.com/Onlinemusicacademyomkarmusic/">
+            <button class="facebook" style="width:50%"><i class="fab fa-facebook"></i>   Facebook</button>
+        </a>
+
+
+    </div>
+    
+    <div class="btn-group column" style="width:100%;margin-top: 150px;">
+        <div style="width: 2px; height: 300px; background-color: black;"></div>
+
+    </div>
+    
+    <div class="btn-group column" style="width: 100%;margin-top: 150px">
+        <div class="map-container">
+        <a href="https://www.google.com/maps?q=Your+Location+Coordinates" target="_blank">
+            <div class="map-circle">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </a>
+        <div class="location-label">Location</div>
+    </div>
+    </div>
+</div>
+    
+
+    </main>    
+
+    
+    
+    <div style="margin-top: 120px">
+<h1 style="text-align: center">Videos</h1>
+</div>
+    
+<center>
+<div>
+        <iframe width="568" height="315" src="https://www.youtube.com/embed/53sSmbmDqas" title="Khairiyat Chhichhore Piano+MIDI Looper+MIDI Kick Pedal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="568" height="315" src="https://www.youtube.com/embed/yT6ImMly7W8" title="Chura liya hai tumne jo dil ko Piano + Looper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="568" height="315" src="https://www.youtube.com/embed/QZWEvltQy9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      	
+        <iframe width="568" height="315" src="https://www.youtube.com/embed/hNanUBRWwYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+</div>
+</center>
+    
+<div style="margin-top: 120px">
+<h1 style="text-align: center">Photos</h1>
+</div> 
+ 
+<!--<center>-->
+<div class="container">
+    <div class="mySlides">
+        <img src="images/gallery/full/item2.png" class="photos-section">  
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/full/item3.png" class="photos-section" width="100%">    
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/full/item4.png" class="photos-section" width="100%">    
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/full/item5.png" class="photos-section" width="100%">    
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/full/item6.png" class="photos-section" width="100%">    
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/full/item7.png" class="photos-section" width="100%">    
+    </div>
+   
+</div>
+<!--    </center>-->
+    
+<!--
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+-->
+
+<!--
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+-->
+    
+<div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/full/item2.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/full/item3.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/full/item4.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/full/item5.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/full/item6.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/full/item7.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+    
+  </div>
+    
+<!--
+<div style="margin-top: 120px">
+<h1 style="text-align: center">Videos</h1>
+</div>
+-->
+  
+
+
+    
+<div style="margin-top: 120px">
+<h1 style="text-align: center">Our Achievements</h1>
+</div>
+<div class="spacer-bottom"></div>
+    
+<!--
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img_woods_wide.jpg" style="width:100%">
+  </div>    
+-->
+    
+<!--
+<div class="container">
+    <div class="mySlides">
+        <img src="images/gallery/omkar%20chowdhary%202nd.jpg" width="100%" height="1000"> 
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/anaushka%20rao%203rd.jpg" width="100%" height="1000">
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/rohit%20lunavara%202nd.jpg" width="100%" height="1000">
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/rohit%20lunavara%205th.jpg" width="100%" height="1000">
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/sagar%20waradkar%202nd.jpg" width="100%" height="1000">
+    </div>
+    <div class="mySlides">
+        <img src="images/gallery/viraj%20mehta%202nd.jpg" width="100%" height="1000">
+    </div>
+   
+</div>
+-->
+    
+<!--
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/omkar%20chowdhary%202nd.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/anaushka%20rao%203rd.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/rohit%20lunavara%202nd.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/rohit%20lunavara%205th.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/sagar%20waradkar%202nd.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/gallery/viraj%20mehta%202nd.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+-->
+
+<!--
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+-->
+    
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Function to move to the next slide automatically
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+    
+    
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+// Function to display the slides
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+
+  // If n is greater than the number of slides, reset to the first slide
+  if (n > slides.length) {slideIndex = 1}
+
+  // If n is less than 1, go to the last slide
+  if (n < 1) {slideIndex = slides.length}
+
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Remove "active" class from all dots
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // Show the current slide
+  slides[slideIndex-1].style.display = "block";
+
+  // Add "active" class to the current dot
+  dots[slideIndex-1].className += " active";
+    
+
+
+  // Update the caption text if needed
+  if (captionText) {
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+}
+
+// Automatically move to the next slide every 3 seconds (3000ms)
+setInterval(function() {
+  plusSlides(1);  // Move to the next slide
+}, 3000);  // Change slides every 3 seconds (3000ms)
+
+    
+    </script>
+</body>
+</html>
