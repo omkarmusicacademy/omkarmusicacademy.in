@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+<style>
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e3ffe7, #d9e7ff);
+  overflow-x: hidden;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a i {
+  margin-right: 8px;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar a {
+    margin-bottom: 5px;
+  }
+}
+
+/* Content Section */
+.content {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #2575fc;
+}
+
+.content p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Button for More Content */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #6a11cb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #2575fc;
+  transform: scale(1.1);
+}
+
+/* Animated Background */
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.floating-icons {
+  position: fixed;
+  top: 40%;
+  left: -50px;
+  animation: floating 3s infinite ease-in-out;
+}
+
+.floating-icons img {
+  width: 100px;
+  opacity: 0.7;
+}
+
+.floating-icons img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+</style>
+
+ 
+   
+
+    
+<!-- Headings -->    
+<style>
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e3ffe7, #d9e7ff);
+  overflow-x: hidden;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Section Headings */
+h1 {
+  color: #2575fc;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #6a11cb;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+ 
+</style>  
+<!-- Headings Closed -->
+    
+<style>
+/* Interactive Button Styling */
+
+
+.btn-group button {
+  border: none; /* Remove default border */
+  padding: 15px 20px; /* Adjust padding for better spacing */
+  cursor: pointer; /* Pointer/hand icon */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  color: white; /* White text */
+/*  flex: 1;  */
+  max-width: calc(33.3% - 10px); /* Adjust width for gaps */
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50px; /* Rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Specific Button Colors */
+.telephone {
+  background-color: #28a745; /* Green background */
+}
+
+.youtube {
+  background-color: #FF0000; /* Red background */
+}
+
+.facebook {
+  background-color: #4267B2; /* Facebook blue */
+}
+
+/* Hover Effects */
+.btn-group button:hover {
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.telephone:hover {
+  background-color: #218838; /* Darker green */
+}
+
+.youtube:hover {
+  background-color: #CC0000; /* Darker red */
+}
+
+.facebook:hover {
+  background-color: #3756A0; /* Darker blue */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .btn-group {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons */
+  }
+
+  .btn-group button {
+    max-width: 90%; /* Full width for smaller screens */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+}
+</style>
+    
+<!-- Photo Section -->
+    
+<!--
+<style>
+/* Photos Section Styling */
+.photos-section {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.photos-section h1 {
+  color: #2575fc;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.photos-section h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #6a11cb;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* Photo Gallery Grid */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; /* Space between the images */
+  margin-top: 20px;
+}
+
+.photo-gallery img {
+  width: 100%; /* Make images fill the container */
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.photo-gallery img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .photo-gallery {
+    grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-gallery {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}
+</style>
+-->
+  <style>
+/*
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+*/
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height:76vh; /* Full height of the viewport */
+    background-color: grey; /* Black background for the container */
+    flex-direction: column; /* Align images vertically in the center */  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style> 
+    
+<!-- Photo Section Closed -->
+    
+<!-- Video Section -->  
+<style>
+/* Ensure the body takes up the full height of the page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+/* Center the video container in the page */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #111; /* Dark background */
+    box-sizing: border-box;
+}
+
+/* Make the iframe responsive */
+.video-container iframe {
+    width: 100%; /* Make iframe take full width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Limit the maximum width */
+    border: 2px solid #ddd; /* Add a border around the video */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+}
+
+/* Optional: Add a hover effect to the iframe */
+.video-container iframe:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+    
+</style>
+<!-- Video Section Closed -->   
+    
+<!-- Game Section -->       
+<style>
+    
+body {
+/*
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+*/
+/*  display: flex;*/
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+    
+    .space {
+/*
+        margin-top: 2px; 
+    margin-left: auto;
+    margin-right: auto; 
+*/
+    padding: 40px 40px;  
+    }    
+    
+.card {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  position: relative;
+  margin-top: 40px;
+    margin-left: 20px
+}
+
+/* Hover effect for card */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Game Image */
+.card img {
+  width: 150px;
+  height: 200px;
+    
+/*
+  object-fit: cover;
+  border-bottom: 3px solid #28a745;
+  transition: transform 0.3s ease;
+*/
+}
+
+/* Game Title */
+.title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  transition: color 0.3s ease;
+}
+
+/* Play Button Styling */
+.play-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Play Button Hover Effect */
+.play-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Play Button Icon Styling */
+.play-button i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Card Content Transition (for title change and image scaling on hover) */
+.card:hover .title {
+  color: #28a745;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Decorative Circle Hover Effect */
+.card .play-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  background-color: rgba(40, 167, 69, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.card .play-button:hover::before {
+  width: 250%;
+  height: 250%;
+}    
+</style>
+    <!-- Game Section Closed -->       
+    
+<body>
+
+
+<div class="navbar">
+  <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="Tutorial_Video.html"><i class="fa fa-fw fa-film"></i> Tutorial Videos</a>
+  <a class="active" href="Games.html"><i class="fa fa-fw fa-gamepad"></i> Music Games</a>
+  <div class="nav-right">
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    <a href="#" class="cta-button">Sign Up</a>
+  </div>
+</div>
+ 
+    
+<div class="space"></div>
+
+    
+<div class="card">
+  <img src="images/Games/Treble.png" alt="Game Image">
+  <h1 class="title">Notes Training</h1>
+  <button class="play-button" onclick="Notes_Training()">
+    <i class="fa fa-play"></i> Play Now
+  </button>
+</div>
+    
+   <script>
+    function Notes_Training() {
+//        document.getElementById("Notes_Training").innerHTML = "<a href='Notes_Training.html'></a>";
+        
+        window.location.href = 'Notes_Training.html';
+    }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
