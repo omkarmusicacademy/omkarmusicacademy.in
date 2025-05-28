@@ -4,6 +4,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     
 <style>
 /* General Styling */
@@ -25,11 +27,11 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  position: fixed;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+/*      position: fixed;*/
 }
 
 .navbar a {
@@ -187,9 +189,6 @@ body {
     </style>
 <!--Android Heading Closed-->    
     
-
-
- 
 
 <!-- Call Option Closed -->
     
@@ -543,7 +542,7 @@ body, html {
             font-weight: bold; /* Bold text for emphasis */
         }
     </style>
-<!-- Map Section Closed -->z
+<!-- Map Section Closed -->
     <style>
         main {
             background-image: url('images/Background/Instruments.jpg');
@@ -577,9 +576,38 @@ body, html {
 
     </style>
     
+<!-- Name Header -->
+<style>
+    .name-bar {
+        color: white;
+        text-align: center;
+        width: 100%;
+        font-size: 38px;
+        font-family: Algerian;
+        /* stretch horizontally  */ 
+        transform: scaleX(1.5);        
+        display: inline-block;        /* needed for transform to apply properly */
+    }
+    
+    .contact-bar {
+        color: white;
+        font-size: 18px;
+        /* prevents line break  */
+/*        white-space: nowrap;  */
+      }
+</style>
+
+    
 <body>
-<div class="spacer-top"></div>
+
+
+<!--<div class="spacer-top"></div>-->
 <div class="navbar">
+    <div class="name-bar">Omkar Music Academy</div>
+    <div class="contact-bar">Contact: 8928678898,9767202912</div>
+</div>
+<div class="navbar">
+<!--    <p><font color="white" size="5px">Omkar Music Academy</font></p>-->
   <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
   <a href="Tutorial_Video.html"><i class="fa fa-fw fa-film"></i> Tutorial Videos</a>
   <a href="Games.html"><i class="fa fa-fw fa-gamepad"></i> Music Games</a>
@@ -624,27 +652,78 @@ body, html {
     
 
     </main>    
+    
+<style>
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Left and Right alignment */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+/*  background-color: #333;*/
+}
 
+.footer-brand a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-brand a:hover {
+  color: #fff;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  right: 10px
+/*    margin-left: 400px*/
+}
+
+.footer-social a {
+  color: #ccc;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
     
+</style>  
     
-    <div style="margin-top: 120px">
-<h1 style="text-align: center">Videos</h1>
+<div class="navbar footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+        <p><font style="color: white">© 2025 Omkar Music Academy</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index.html">Home</a>
+        <a href="Tutorial_Video.html">Tutorial Videos</a>
+        <a href="Games.html">Music Games</a></p>
+    </div>
+    
+<!--
+    <div class="footer-social">
+      <a href="#" title="YouTube">🎵</a>
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Instagram">📸</a>
+    </div>
+-->
+    
+    <div class="footer-social">
+      <a href="https://www.youtube.com/@Omkarmusicacademy?sub_confirmation=1" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.facebook.com/Onlinemusicacademyomkarmusic/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
 </div>
-    
-<center>
-<div>
-        <iframe width="568" height="315" src="https://www.youtube.com/embed/53sSmbmDqas" title="Khairiyat Chhichhore Piano+MIDI Looper+MIDI Kick Pedal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="568" height="315" src="https://www.youtube.com/embed/yT6ImMly7W8" title="Chura liya hai tumne jo dil ko Piano + Looper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="568" height="315" src="https://www.youtube.com/embed/QZWEvltQy9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      	
-        <iframe width="568" height="315" src="https://www.youtube.com/embed/hNanUBRWwYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-</div>
-</center>
-    
+
+<!--
 <div style="margin-top: 120px">
 <h1 style="text-align: center">Photos</h1>
 </div> 
  
-<!--<center>-->
 <div class="container">
     <div class="mySlides">
         <img src="images/gallery/full/item2.png" class="photos-section">  
@@ -666,18 +745,6 @@ body, html {
     </div>
    
 </div>
-<!--    </center>-->
-    
-<!--
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
--->
-
-<!--
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
--->
     
 <div class="row">
     <div class="column">
@@ -701,12 +768,7 @@ body, html {
     
   </div>
     
-<!--
-<div style="margin-top: 120px">
-<h1 style="text-align: center">Videos</h1>
-</div>
--->
-  
+
 
 
     
@@ -714,6 +776,7 @@ body, html {
 <h1 style="text-align: center">Our Achievements</h1>
 </div>
 <div class="spacer-bottom"></div>
+-->
     
 <!--
 <div class="container">
