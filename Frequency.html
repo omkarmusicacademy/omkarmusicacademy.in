@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Tuner</title>
+<style>
+  body { font-family: Arial, sans-serif; text-align: center; padding: 30px; }
+  #freq { font-size: 48px; margin-top: 20px; }
+  button { font-size: 18px; padding: 10px 20px; }
+</style>
+</head>
+<body>
+  <h1>Simple Tuner</h1>
+  <button id="startBtn">Start Tuner</button>
+  <div id="freq">Frequency: -- Hz</div>
+
+<script>
+let audioContext;
+let analyserNode;
+let microphoneStream;
+let bufferLength = 2048;
+let dataArray;
+
+const freqDisplay = document.getElementById('freq');
+const startBtn = document.getElementById('startBtn');
+
+startBtn.onclick = async () => {
+  // Create Audio Context
+  audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    microphoneStream = audioContext.createMediaStreamSource(stream);
+
+    analyserNode = audioContext.createAnalyser();
+    analyserNode.fftSize = 2048;
+
+    microphoneStream.connect(analyserNode);
+
+    dataArray = new Float32Array(analyserNode.fftSize);
+
+    detectPitch();
+  } catch (err) {
+    alert('Microphone access denied or not available.');
+    console.error(err);
+  }
+};
+
+function autoCorrelate(buffer, sampleRate) {
+  // Implements the ACF (Autocorrelation) algorithm to detect pitch
+  let SIZE = buffer.length;
+  let maxSamples = Math.floor(SIZE / 2);
+  let bestOffset = -1;
+  let bestCorrelation = 0;
+  let rms = 0;
+  let correlations = new Array(maxSamples);
+
+  for (let i = 0; i < SIZE; i++) {
+    let val = buffer[i];
+    rms += val * val;
+  }
+  rms = Math.sqrt(rms / SIZE);
+  if (rms < 0.01) // not enough signal
+    return -1;
+
+  let lastCorrelation = 1;
+  for (let offset = 0; offset < maxSamples; offset++) {
+    let correlation = 0;
+
+    for (let i = 0; i < maxSamples; i++) {
+      correlation += Math.abs((buffer[i]) - (buffer[i + offset]));
+    }
+    correlation = 1 - (correlation / maxSamples);
+    correlations[offset] = correlation;
+
+    if (correlation > 0.9 && correlation > lastCorrelation) {
+      bestCorrelation = correlation;
+      bestOffset = offset;
+    } else if (bestCorrelation > 0.9 && correlation < lastCorrelation) {
+      // Found a peak
+      break;
+    }
+    lastCorrelation = correlation;
+  }
+  if (bestOffset === -1)
+    return -1;
+
+  // Calculate frequency from best offset
+  return sampleRate / bestOffset;
+}
+
+function detectPitch() {
+  analyserNode.getFloatTimeDomainData(dataArray);
+  let pitch = autoCorrelate(dataArray, audioContext.sampleRate);
+
+  if (pitch !== -1) {
+    freqDisplay.textContent = 'Frequency: ' + pitch.toFixed(2) + ' Hz';
+  } else {
+    freqDisplay.textContent = 'Frequency: -- Hz';
+  }
+  requestAnimationFrame(detectPitch);
+}
+</script>
+</body>
+</html>
